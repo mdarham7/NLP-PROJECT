@@ -1,6 +1,11 @@
 from flask import Flask, request, jsonify, send_file, render_template
 import re
 from io import BytesIO
+import nltk
+nltk.data.path.append("C:\\Users\\Mohammed Arham\\nltk_data")
+nltk.download('stopwords', download_dir="C:\\Users\\Mohammed Arham\\nltk_data")
+
+
 
 # nltk.download('stopwords')
 from nltk.corpus import stopwords
